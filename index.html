@@ -7,7 +7,7 @@
     <link href="img/favicon.ico" rel="shortcut icon">
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,10 +23,10 @@
 
 <body>
     <header>
-        <div id="top">
-            <img src="img/jb_logo.svg" alt="Janae Breunig Logo">
+        <div class="container">
+            <img class="logo" src="img/jb_logo.svg" alt="Janae Breunig Logo">
             <nav>
-                <ul>
+                <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -36,9 +36,9 @@
     </header>
     <main>
         <div id="hero">
-            <div>
-                <h1>Hello! my name is Janae Breunig</h1>
-                <span>I'm a creative designer based in Duluth, Minnesota.</span>
+            <div class="container">
+                <h1>Hello!</h1>
+                <p>My name is Janae Breunig and I'm a creative designer based in Duluth, Minnesota.</p>
                 <p>I’m a multi-faceted designer who combines creativity
                     with problem-solving and works to create visually appealing
                     solutions that address real-world challenges.</p>
@@ -46,58 +46,183 @@
         </div>
 
         <div id="work">
-            <div>
-                <h2>My Work</h2>
-            </div>
+            <h3>My Work </h3>
 
             <div>
-                <div>
+                <div class="row">
+                    <div>
                     <picture>
                         <source srcset="img/meal-maker/home-images/meal-1x.png" media="(max-width:767px)">
                         <img src="img/meal-maker/home-images/meal-2x.png" alt="Meal Maker">
                     </picture>
-                </div>
-                <div>
-                    <h3>Meal Maker</h3>
-                    <p>This is an UXUI case study for a one-stop recipe app.
+                    </div>
+                    <div>
+                        <h3>Meal Maker</h3>
+                        <p>This is an UXUI case study for a one-stop recipe app.
                         For this project, I completed the entire UX process from
                         ideation and research to user personas and user testing.
                         Once I understood what my user was looking for, I started
                         the UI process by refining my wireframes and creating the
                         look/feel of the app and taking that through to mockups
                         and prototypes.</p>
-                    <a href="mealmaker.html" class="button"> view project</a>
+                        <div class="center-button">
+                            <a href="mealmaker.html" class="button"> view project</a>
+                        </div>
+                    </div>
                 </div>
 
-                <br>
+                <div class="row">
+                    <div>
+                        <picture>
+                            <source srcset="img/lively-finance/home-images/lively-1x.png" media="(max-width:767px)">
+                            <img src="img/lively-finance/home-images/lively-2x.png" alt="Lively Finance">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Lively Finance</h3>
+                        <p>This is an UI case study to build an app to allow my user
+                        to reach their specific savings goal. For this project I
+                        completed the UI process from defining the objective and
+                        guiding principles, to user flows and testing, to low, mid
+                        and high wireframes.</p>
+                        <div class="center-button">
+                            <a href="#" class="button"> view project</a>
+                        </div>
+                    </div>
+                </div>
 
-                <div>
-                    <picture>
-                        <source srcset="img/lively-finance/home-images/lively-1x.png" media="(max-width:767px)">
-                        <img src="img/lively-finance/home-images/lively-2x.png" alt="Lively Finance">
-                    </picture>
+                <div class="row">
+                    <div>
+                        <picture>
+                            <source srcset="img/maurices-app/home-images/maurices-1x.png" media="(max-width:767px)">
+                            <img src="img/maurices-app/home-images/maurices-2x.png" alt="maurices app">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>maurices</h3>
+                        <p>This is a case study for a native app for maurices, a women’s 
+                            fashion retailer. I did the research and created wireframes 
+                            and prototypes that followed both iOS and Android best practices.</p>
+                        <div class="center-button">
+                            <a href="#" class="button"> view project</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h3>Lively Finance</h3>
-                    <p>This is an UI case study to build an app to allow my user
-                    to reach their specific savings goal. For this project I
-                    completed the UI process from defining the objective and
-                    guiding principles, to user flows and testing, to low, mid
-                    and high wireframes.</p>
-                     <a href="#" class="button"> view project</a>
+
+                <div class="row">
+                    <div>
+                        <picture>
+                            <source srcset="img/inky-notes/home-images/inky-1x.png" media="(max-width:767px)">
+                            <img src="img/inky-notes/home-images/inky-2x.png" alt="Inky Notes">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Inky Notes</h3>
+                        <p>For this project, I was given a challenge to create the UI for a 
+                            simple, functional, and well designed note taking app with a tight 
+                            deadline to present to shareholders.</p>
+                        <div class="center-button">
+                            <a href="#" class="button"> view project</a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="row">
+                    <div>
+                        <picture>
+                            <source srcset="img/maurices-holiday/home-imgs/maurices-holiday-1x.png" media="(max-width:767px)">
+                            <img src="img/maurices-holiday/home-imgs/maurices-holiday-2x.png" alt="maurices Holiday">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>maurices Holiday 2021 campaign</h3>
+                        <p>Created all the hand lettering assets and worked with my team to
+                            develop the store marketing experience for our shoppers for the 
+                            Holiday 2021 season.</p>
+                        <div class="center-button">
+                            <a href="#" class="button"> view project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <picture>
+                            <source srcset="img/v1/home-images/v1-1x.png" media="(max-width:767px)">
+                            <img src="img/v1/home-images/v1-2x.png" alt="Volume One">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Volume One</h3>
+                        <p>This is a compilation of pieces I created while working for Volume One. 
+                            Volume One is a magazine, an event and video production company, and a 
+                            retail store based in Eau Claire, WI. </p>
+                        <div class="center-button">
+                            <a href="#" class="button"> view project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <picture>
+                            <source srcset="img/oxbow/home-images/oxbow-1x.png" media="(max-width:767px)">
+                            <img src="img/oxbow/home-images/oxbow-2x.png" alt="Oxbow Hotel">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>th Oxbow Hotel</h3>
+                        <p>The Oxbow Hotel is a boutique hotel based in Eau Claire, WI. I worked 
+                            with a team to create a lot of the necessary collateral needed for the 
+                            opening of the hotel. </p>
+                        <div class="center-button">
+                            <a href="#" class="button"> view project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <picture>
+                            <source srcset="img/logos/home-images/logos-1x.png" media="(max-width:767px)">
+                            <img src="img/logos/home-images/logos-2x.png" alt="Logos">
+                        </picture>
+                    </div>
+                    <div>
+                        <p>Here is a collection of logos <br> I have created over the years. </p>
+                        <div class="center-button">
+                            <a href="#" class="button"> view project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <picture>
+                            <source srcset="img/illo/home-images/illo-1x.png" media="(max-width:767px)">
+                            <img src="img/illo/home-images/illo-2x.png" alt="Illustrations">
+                        </picture>
+                    </div>
+                    <div>
+                        <p>Here is a collection of illustrations <br> I have created over the years. </p>
+                        <div class="center-button">
+                            <a href="#" class="button"> view project</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
     </main>
     <footer id="contact">
-        <div>
-            <h2>Get in Touch</h2>
-                <p>Do you like my work and want to discuss opportunities? I would love to hear from you!</p>
-            <div>
+        <div class="container">
+            <h3>Get in Touch</h3>
+                <p>Do you like my work and want to discuss opportunities? <br> I would love to hear from you!</p>
+            <div class="center-button">
                 <a href="mailto:janaebreunig@gmail.com" class="button contact">Email Me</a>
             </div>
-            <p>copyright Janae Breunig 2023</p>
+            <h6>copyright Janae Breunig 2023</h6>
         </div>
     </footer>
 
