@@ -50,8 +50,9 @@ h6 {
 
 p {
   font-family: 'Lora', serif;
-  font-size: 16;
+  font-size: 12pt;
   font-weight: 400;
+  line-height: 1.5em;
   text-align: center;
   color: #373833;
 }
@@ -223,12 +224,25 @@ nav > ul > li > a:active {
   padding: 0 25px 5px;
 }
 
-.flower1 {
-  background-color: #c04327;
+.animatedCircle {
+  fill: #a73920;
+  stroke: blue;
+  stroke-width: 5;
+  animation: pulse 3s infinite;
 }
 
-.flower2 {
-  background-color: aqua;
+@keyframes pulse {
+  0% {
+    r: 20;
+  }
+
+  50% {
+    r: 50;
+  }
+
+  100% {
+    r: 20;
+  }
 }
 
 [class*="col-"] {
@@ -260,11 +274,11 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
-    width: 55%;
+    width: 60%;
   }
 
-  .col-md-5 {
-    width: 42%;
+  .col-lg-5 {
+    width: 40%;
     float: left;
   }
 }
