@@ -19,19 +19,24 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="https://kit.fontawesome.com/4770c8d3b2.js" crossorigin="anonymous"></script>
+
   </head>
 
 <body>
     <header>
         <div class="container">
-            <img class="logo" src="img/jb_logo.svg" alt="Janae Breunig Logo">
-            <nav>
-                <ul class="navigation">
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <img class="logo" src="img/jb_logo.svg" alt="Janae Breunig Logo">
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -46,18 +51,19 @@
         </div>
 
         <div class="container" id="work">
-            <h3>My Work </h3>
-
+            <h3>My Work</h3>
             <div>
                 <div class="row">
                     <div class="col-md-6 col-lg-7">
-                    <picture>
-                        <source srcset="img/meal-maker/home-images/meal-1x.png" media="(max-width:767px)">
-                        <img src="img/meal-maker/home-images/meal-2x.png" alt="Meal Maker">
-                    </picture>
+                    <a href="mealmaker.html">
+                        <picture>
+                            <source srcset="img/meal-maker/home-images/meal-1x.png" media="(max-width:767px)">
+                            <img src="img/meal-maker/home-images/meal-2x.png" alt="Meal Maker">
+                        </picture>
+                    </a>
                     </div>
                     <div class="col-md-6 col-lg-5">
-                        <h3>Meal Maker</h3>
+                        <h4>Meal Maker</h4>
                         <p>This is a UX/UI case study for a one-stop recipe app. I saw this project all the way from 
                             ideation and research to user testing and brand design to wireframes and prototypes.</p>
                         <div class="center-button">
@@ -67,14 +73,16 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 col-lg-7">                        
+                    <div class="col-md-6 col-lg-7">   
+                        <a href="">                     
                         <picture>
                             <source srcset="img/lively-finance/home-images/lively-1x.png" media="(max-width:767px)">
                             <img src="img/lively-finance/home-images/lively-2x.png" alt="Lively Finance">
                         </picture>
+                        </a>
                     </div>
                     <div class="col-md-6 col-lg-5">
-                        <h3>Lively Finance</h3>
+                        <h4>Lively Finance</h4>
                         <p>This is a UI case study for an app that helps users reach their specific savings goals. I completed 
                             the UI process from defining the objective, to user flows and testing, to final wireframes.</p>
                         <div class="center-button">
@@ -85,13 +93,15 @@
 
                 <div class="row">
                     <div class="col-md-6 col-lg-7">
+                        <a href="">                     
                         <picture>
                             <source srcset="img/maurices-app/home-images/maurices-1x.png" media="(max-width:767px)">
                             <img src="img/maurices-app/home-images/maurices-2x.png" alt="maurices app">
                         </picture>
+                        </a>
                     </div>
                     <div class="col-md-6 col-lg-5">
-                        <h3>maurices</h3>
+                        <h4>maurices</h4>
                         <p>This is a case study for a native app for maurices, a women’s fashion retailer. I completed 
                             the research and created wireframes and prototypes per iOS and Android best practices.</p>
                         <div class="center-button">
@@ -102,13 +112,15 @@
 
                 <div class="row">
                     <div class="col-md-6 col-lg-7">
+                        <a href="">                     
                         <picture>
                             <source srcset="img/inky-notes/home-images/inky-1x.png" media="(max-width:767px)">
                             <img src="img/inky-notes/home-images/inky-2x.png" alt="Inky Notes">
                         </picture>
+                        </a>
                     </div>
                     <div class="col-md-6 col-lg-5">
-                        <h3>Inky Notes</h3>
+                        <h4>Inky Notes</h4>
                         <p>For this project, I was given a challenge to create the UI for a simple, functional, and 
                             well-designed note taking app with a tight deadline to present to shareholders.</p>
                         <div class="center-button">
@@ -119,13 +131,15 @@
 
                 <div class="row">
                     <div class="col-md-6 col-lg-7">
+                        <a href="">                     
                         <picture>
                             <source srcset="img/maurices-holiday/home-imgs/maurices-holiday-1x.png" media="(max-width:767px)">
                             <img src="img/maurices-holiday/home-imgs/maurices-holiday-2x.png" alt="maurices Holiday">
                         </picture>
+                        </a>
                     </div>
                     <div class="col-md-6 col-lg-5">
-                        <h3>maurices Holiday 2021 campaign</h3>
+                        <h4>maurices Holiday 2021 campaign</h4>
                         <p>For this project, I created all the hand lettering assets and worked with my team to develop
                              and execute store marketing experience for our shoppers for the Holiday 2021 season.</p>
                         <div class="center-button">
@@ -136,13 +150,15 @@
 
                 <div class="row">
                     <div class="col-md-6 col-lg-7">
+                        <a href="">                     
                         <picture>
                             <source srcset="img/v1/home-images/v1-1x.png" media="(max-width:767px)">
                             <img src="img/v1/home-images/v1-2x.png" alt="Volume One">
                         </picture>
+                        </a>
                     </div>
                     <div class="col-md-6 col-lg-5">
-                        <h3>Volume One</h3>
+                        <h4>Volume One</h4>
                         <p>This is a compilation of pieces I created for Volume One. Volume One is a magazine, and 
                             event and video production company, and a retail store based in Eau Claire, WI. </p>
                         <div class="center-button">
@@ -153,13 +169,15 @@
 
                 <div class="row">
                     <div class="col-md-6 col-lg-7">
+                        <a href="">                     
                         <picture>
                             <source srcset="img/oxbow/home-images/oxbow-1x.png" media="(max-width:767px)">
                             <img src="img/oxbow/home-images/oxbow-2x.png" alt="Oxbow Hotel">
                         </picture>
+                        </a>
                     </div>
                     <div class="col-md-6 col-lg-5">
-                        <h3>The Oxbow Hotel</h3>
+                        <h4>The Oxbow Hotel</h4>
                         <p> This is a compilation of pieces I created for the Oxbow Hotel, a boutique hotel based in 
                             Eau Claire, WI. I worked with a team to create many pieces needed for the opening of the hotel. </p>
                         <div class="center-button">
@@ -170,10 +188,12 @@
 
                 <div class="row">
                     <div class="col-md-6 col-lg-7">
+                        <a href="">                     
                         <picture>
                             <source srcset="img/logos/home-images/logos-1x.png" media="(max-width:767px)">
                             <img src="img/logos/home-images/logos-2x.png" alt="Logos">
                         </picture>
+                        </a>
                     </div>
                     <div class="col-md-6 col-lg-5">
                         <p> Here is a collection of logos I have created over the years. </p>
@@ -185,10 +205,12 @@
 
                 <div class="row">
                     <div class="col-md-6 col-lg-7">
+                        <a href="">                     
                         <picture>
                             <source srcset="img/illo/home-images/illo-1x.png" media="(max-width:767px)">
                             <img src="img/illo/home-images/illo-2x.png" alt="Illustrations">
                         </picture>
+                        </a>
                     </div>
                     <div class="col-md-6 col-lg-5">
                         <p> Here is a collection of illustrations I have created over the years</p>
@@ -198,7 +220,7 @@
                     </div>
                 </div>
 
-
+                <!---
                 <div class="row">
                     <div class="col-md-6 col-lg-7">
                         <picture>
@@ -214,6 +236,7 @@
                         </div>
                     </div>
                 </div>
+                 -->
 
             </div>
         </div>
@@ -229,6 +252,7 @@
             <h6>copyright Janae Breunig 2023</h6>
         </div>
     </footer>
+    <script   src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 
 </body>
