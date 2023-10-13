@@ -1,118 +1,167 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>About</title>
-    <link href="img/favicon.ico" rel="shortcut icon">
+    <link href="img/favicon.ico" rel="shortcut icon" />
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script src="https://kit.fontawesome.com/4770c8d3b2.js" crossorigin="anonymous"></script>
-
+    <script
+      src="https://kit.fontawesome.com/4770c8d3b2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
-<body>
+  <body>
     <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <img class="logo" src="img/jb_logo.svg" alt="Janae Breunig Logo">
-                <nav>
-                    <ul class="navigation">
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <img class="logo" src="img/jb_logo.svg" alt="Janae Breunig Logo" />
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
     <main class="container">
-        <div class="row">
-            <div>
-                <div class="col-md-6 col-lg-7">
-                    <source srcset="img/Profile-1x.png" media="(max-width:767px)">
-                    <img src="img/Profile-2x.png" alt="My Image">
-                </div>
-            </div>
-            <div class="row" >
-                <div class="col-md-6 col-lg-5">
-                    <div class="story">
-                        <h2>My Story</h2>
-                        <p>Hello! Thank you so much for taking the time to check out my portfolio site. My name is Janae Breunig 
-                            and I am a designer. I grew up in a small town in Northwest Wisconsin before going to UW-Eau Claire 
-                            where I received a BA in Graphic Design. </p>
-                        <p>Since graduating in 2013, I have worked primarily in print design in many industries. I have worked on a few 
-                            in-house marketing teams, as well as at a magazine where we had new projects coming up every week for various 
-                            local businesses and events.</p>
-                        <p>As much as I love print design, I wanted to expand my knowledge and skill base, so I have recently completed 
-                            a UI Bootcamp through Career Foundry where I have learned a lot about UI design, as well as some UX process 
-                            and some Front End Development. I'm so excited to continue to learn more about this field and see where 
-                            these new learnings and opportunities lead. </p>
-                            <div class="center-button">
-                                <a href="files/resumeplaceholder.pdf" target="blank" class="button"> Resume</a>
-                            </div>
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div>
+          <div class="col-md-6 col-lg-7">
+            <picture>
+              <source srcset="img/Profile-1x.png" media="(max-width:767px)" />
+              <img src="img/Profile-2x.png" alt="My Image" />
+            </picture>
+          </div>
         </div>
-
-
         <div class="row">
-            <h2>Skills and Tools</h2>
-                <div class="col-md-6">
-                    <h3> Relevant Skills</h3>
-                        <ul>
-                            <li>UI Design</li>
-                            <li>UX Design</li>
-                            <li>Branding</li>
-                            <li>Print Design</li>
-                            <li>Print Production</li>
-                            <li>Illustration</li>
-                        </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3> Tools I use</h3>
-                        <ul>
-                            <li>Adobe Suite</li>
-                            <li>Figma</li>
-                            <li>Visual Studio Code</li>
-                            <li>Sketchbook</li>
-                            <li>Pencils, Pens, Markers</li>
-                        </ul>
-                </div>
+          <div class="col-md-6 col-lg-5">
+            <div class="story">
+              <h2>My Story</h2>
+              <p>
+                Hello! Thank you so much for taking the time to check out my
+                portfolio site. My name is Janae Breunig and I am a designer. I
+                grew up in a small town in Northwest Wisconsin before going to
+                UW-Eau Claire where I received a BA in Graphic Design.
+              </p>
+              <p>
+                Since graduating in 2013, I have worked primarily in print
+                design in many industries. I have worked on a few in-house
+                marketing teams, as well as at a magazine where we had new
+                projects coming up every week for various local businesses and
+                events.
+              </p>
+              <p>
+                As much as I love print design, I wanted to expand my knowledge
+                and skill base, so I have recently completed a UI Bootcamp
+                through Career Foundry where I have learned a lot about UI
+                design, as well as some UX process and some Front End
+                Development. I'm so excited to continue to learn more about this
+                field and see where these new learnings and opportunities lead.
+              </p>
+              <div class="center-button">
+                <a
+                  href="files/resumeplaceholder.pdf"
+                  target="blank"
+                  class="button"
+                >
+                  Resume</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="row">
+        <h2>Skills and Tools</h2>
+        <div class="col-md-6">
+          <h3>Relevant Skills</h3>
+          <ul>
+            <li>UI Design</li>
+            <li>UX Design</li>
+            <li>Branding</li>
+            <li>Print Design</li>
+            <li>Print Production</li>
+            <li>Illustration</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Tools I use</h3>
+          <ul>
+            <li>Adobe Suite</li>
+            <li>Figma</li>
+            <li>Visual Studio Code</li>
+            <li>Sketchbook</li>
+            <li>Pencils, Pens, Markers</li>
+          </ul>
+        </div>
+      </div>
     </main>
 
     <footer id="contact">
-        <div class="container">
-            <h3>Get in Touch</h3>
-                <p>Do you like my work and want to discuss opportunities? <br> I would love to hear from you!</p>
-                <p>Reach out on LinkedIn or email me at janaebreunig@gmail.com.</p>
-                <h3>THANK YOU!</h3>
-            <div class="center-button">
-                <a href="mailto:janaebreunig@gmail.com" class="social"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.behance.net/janaebreunig" class="social"><i class="fa-brands fa-behance"></i></a>
-                <a href="https://www.linkedin.com/in/janae-breunig-3677486a/" class="social"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-            <h6>copyright Janae Breunig 2023</h6>
+      <div class="container">
+        <h3>Get in Touch</h3>
+        <p>
+          Do you like my work and want to discuss opportunities? <br />
+          I would love to hear from you!
+        </p>
+        <p>Reach out on LinkedIn or email me at janaebreunig@gmail.com.</p>
+        <h3>THANK YOU!</h3>
+        <div class="center-button">
+          <a href="mailto:janaebreunig@gmail.com" class="social"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="https://www.behance.net/janaebreunig" class="social"
+            ><i class="fa-brands fa-behance"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/janae-breunig-3677486a/"
+            class="social"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
         </div>
+        <h6>copyright Janae Breunig 2023</h6>
+      </div>
     </footer>
-    <script   src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-  
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
   </body>
-  
-  </html>
+</html>
